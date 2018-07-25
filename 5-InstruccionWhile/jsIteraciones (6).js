@@ -1,14 +1,17 @@
 function mostrar()
-{var i = 1;
+{var contador = 1;
 var acumulador = 0;
-var numero;
 var promedio;
+//var numero;
 
-while(i <= 5)
+//Se establece una variable para sumar valores ingresados por el usuario 
+//Se establece otra variable para contabilizar la cantidad de iteraciones
+
+while(contador <= 5)
 {
-	numero = parseInt(prompt("Ingrese un número"));
-	acumulador = acumulador + numero;
-	i = i + 1;	
+	//numero = parseInt(prompt("Ingrese un número"));
+	acumulador = acumulador + (parseInt(prompt("Ingrese un número")));
+	contador = contador + 1;	
 }
 
 promedio = acumulador / 5;
