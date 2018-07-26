@@ -18,11 +18,14 @@ do
 	respuesta = prompt("¿Continuar?");
 	respuesta.toLowerCase;
 	
+	/*if(respuesta == "si" || respuesta == "no")
+	{
+		alert("Dato inválido");
+		mostrar();
+	}*/
 	
 
 }while(respuesta == "si");
-
-
 	
 document.getElementById("suma").value = acumulador;
 document.getElementById("promedio").value = acumulador/contador;
