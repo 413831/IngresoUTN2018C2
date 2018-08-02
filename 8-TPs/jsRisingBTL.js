@@ -9,5 +9,51 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+var edad;
+var sexo;
+var estadoCivil;
+var sueldo;
+var legajo;
+var nacionalidad;
+
+do
+{
+    edad = parseInt(prompt("Ingrese su edad"));
+}while(edad < 18 || edad > 90);
+
+
+do
+{
+    sexo = prompt("Ingrese su sexo");
+}while(sexo != "M" || sexo != "F");
+
+
+do
+{
+    estadoCivil = prompt("Ingrese su estado civil");
+    
+}while(sexo != "M" || sexo != "F");
+
+do
+{
+    sueldo = prompt("Ingrese su sueldo bruto");
+}while(sueldo < 8000);
+
+do
+{
+    legajo = parseInt(prompt("Ingrese su numero de legajo"));  
+}while(legajo > 9999);
+
+do
+{
+    nacionalidad = prompt("Ingrese su nacionalidad ,'A' para Argentinos , 'E' para extranjeros , 'N' para nacionalizados");
+}while(nacionalidad != "A" || nacionalidad != "E" || nacionalidad != "N");
+
+
+
+
+}  
+
+
+
 }
